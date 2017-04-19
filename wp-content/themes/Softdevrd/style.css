@@ -1,0 +1,64 @@
+
+/*
+Theme Name: SoftdevNewTheme
+Theme URI: http://softdevrd.com
+Author: Fernando Lebron	
+Author URI: http://softdevrd.com/
+Description: DRAgency webpage 
+Version: 1.0
+Text Domain: softdevrd
+
+*/
+p{
+	font-family: "Open Sans";
+	font-size: 20px;
+}
+h1 h2 h3 h4 h5 h6{
+	font-family: "Open Sans";
+	font-size: 20px;
+}
+.nav .navbar-nav{
+
+	margin-top: 30px;
+	font-family: "Open Sans";
+	font-size: 20px;
+
+} 
+
+.navbar-brand > img{
+	margin-top: -160px;
+}
+
+.navbar-brand2 > img{
+	margin-top: -10px;
+}
+
+.navbar {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-toggle{
+	background-color: #000;
+	border: none;
+}
+
+.navbar-inverse .navbar-toggle{
+	background-color: #0b6a9b;
+	border: none;
+	margin-top: 40px;
+}
+
+.navbar-inverse .navbar-collapse{
+	border: none;
+	background-color: #fff;
+	
+}
+.navbar-inverse .navbar-nav>li>a{
+	color: #000;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background-color: #0b6a9b;
+}
+
