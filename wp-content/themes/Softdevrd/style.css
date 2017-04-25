@@ -63,6 +63,8 @@ h1 h2 h3 h4 h5 h6{
 	background-color: #2a2b2c;
 }
 
+
+
 .navbar-inverse .navbar-nav>li>a:focus{
 		color: #fff;
 	background-color: #2a2b2c;
@@ -109,12 +111,31 @@ position: fixed;
   background-color: #555;
 }
 
-.intro-section{
-	background-color: #012c3c;
-	background-image: url("banner1.jpg");
-	background-repeat: no-repeat;
+.fa-lightbulb-o{
+	color: yellow;
+}
+
+.fa-code{
+	color: #e47a13;
+}
+
+.callme:hover{     
+	color: #0cca27; 
+
+}
+
+.about-section {
+	/*background-color: #012c3c;*/
+	
+	margin-top: -220px;
 }
 
 .headerh{
-	color: #fff;
+	color: #f4f8fa;
+	font-size: 68px;
+}
+
+.headerh >  p{
+	color: #f4f8fa;
+	font-size: 28px;
 }

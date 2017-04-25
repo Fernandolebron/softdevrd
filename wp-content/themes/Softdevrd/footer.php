@@ -4,7 +4,8 @@
 </button>
 
 <footer class="blog-footer">
-   
+   <br>
+   <br>
       <!--</section>-->
       <p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?> </p>
 
