@@ -86,4 +86,44 @@
      </div>   <!--Div row-->
    </div> <!-- Div Container -->
 
-  
+         <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+         
+            <div class="row">
+                <div class=" headerh col-lg-12">
+
+                   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                                    <?php query_posts(array(
+                                        'category_name'  => 'header',
+                                        'posts_per_page' => 1
+                                      )); while (have_posts()) : the_post(); ?>
+          <h1 class=""><?php the_title()?></h1>
+                    <p  class=""><?php the_content()?></p>
+                    <a class="btn btn-default page-scroll" href="#about">Conocer Más!</a>                               
+                                <!--<div class="carousel-desc">
+
+                                    <h3><?php the_title(); ?></h3>
+                    <p><?php the_excerpt(); ?></p>-->
+                
+                <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
+
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+
+                    
+                    
+                </div>
+                 
+
+                  
+            </div>
+
+           
+        </div>
+    </section>
