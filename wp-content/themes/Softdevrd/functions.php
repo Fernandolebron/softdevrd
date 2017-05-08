@@ -12,7 +12,7 @@
 			));
 
 		add_theme_support('post-thumbnails');
-	add_image_size('small-thumbnail',  317, 160, true); 
+	add_image_size('small-thumbnail',  417, 160, true); 
 	add_image_size('banner-image', 1200, 600, true);
 	}
 
