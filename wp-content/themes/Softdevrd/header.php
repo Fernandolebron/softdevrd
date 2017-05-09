@@ -100,7 +100,7 @@
                                       )); while (have_posts()) : the_post(); ?>
           <h1 class=""><?php the_title()?></h1>
                     <p  class=""><?php the_content()?></p>
-                    <a class="btn btn-default page-scroll" href="#about">Conocer Más!</a>                               
+                   <br>                              
                                 <!--<div class="carousel-desc">
 
                                     <h3><?php the_title(); ?></h3>

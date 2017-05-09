@@ -566,12 +566,7 @@ background: #428bca;
 
 /******************************Ower team******************************/
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900');
-body {
-  margin-top: 60px;
-  font-size: 14px;
-  font-family: 'Arima Madurai', cursive;
-  background-color: #fff;
-}
+
 .btn:hover,
 .btn:focus,
 .btn:active{

@@ -23,60 +23,44 @@
 		                  else: 
 		                      echo '<p>No content found</p>';
 		                  endif; ?>
-      <ul class="timeline">
-        <li>
-          <div class="timeline-image">
-            <img class="img-circle img-responsive" src="" alt="">
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>Step One</h4>
-              <h4 class="subheading">Subtitle</h4>
-            </div>
-            <div class="timeline-body">
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-          <div class="line"></div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-image">
-            <img class="img-circle img-responsive" src="" alt="">
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>Step Two</h4>
-              <h4 class="subheading">Subtitle</h4>
-            </div>
-            <div class="timeline-body">
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-          <div class="line"></div>
-        </li>
-        <li>
-          <div class="timeline-image">
-            <img class="img-circle img-responsive" src="" alt="">
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>Step Three</h4>
-              <h4 class="subheading">Subtitle</h4>
-            </div>
-            <div class="timeline-body">
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
+     
     </div>
   </div>
+</div>
+
+<div class="container">
+
+ <div class="row">
+
+            
+            <br>
+              <div class="col-md-4">
+                <center>
+                  <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+                  <br>
+                  <h4 class="footertext">Programmer</h4>
+                  <p class="footertext">You can thank all the crazy programming here to this guy.<br>
+                </center>
+              </div>
+              <div class="col-md-4">
+                <center>
+                  <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+                  <br>
+                  <h4 class="footertext">Artist</h4>
+                  <p class="footertext">All the images here are hand drawn by this man.<br>
+                </center>
+              </div>
+              <div class="col-md-4">
+                <center>
+                  <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+                  <br>
+                  <h4 class="footertext">Designer</h4>
+                  <p class="footertext">This pretty site and the copy it holds are all thanks to this guy.<br>
+                </center>
+              </div>
+            </div>
+           
+
 </div>
 
 </section>
