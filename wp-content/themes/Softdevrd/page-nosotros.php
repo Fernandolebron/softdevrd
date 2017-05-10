@@ -36,26 +36,67 @@
             <br>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+                  <i class="fa fa-line-chart fa-4x" aria-hidden="true"></i>
                   <br>
-                  <h4 class="footertext">Programmer</h4>
-                  <p class="footertext">You can thank all the crazy programming here to this guy.<br>
+                  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                                        <?php query_posts(array(
+                                            'category_name'  => 'mision',
+                                            'posts_per_page' => 1
+                                          )); while (have_posts()) : the_post(); ?>
+                  <h4 class="footertext"><?php the_title();?></h4>
+                  <p class="footertext"><?php the_content();?><br>
+                   <?php endwhile; ?>
+                
+                      <?php wp_reset_query(); ?>
+
+                      <?php endwhile; 
+
+                      else: 
+                          echo '<p>No content found</p>';
+                      endif; ?>
                 </center>
               </div>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+                  <i class="fa fa-eye fa-4x" aria-hidden="true"></i>
                   <br>
-                  <h4 class="footertext">Artist</h4>
-                  <p class="footertext">All the images here are hand drawn by this man.<br>
+                  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                                        <?php query_posts(array(
+                                            'category_name'  => 'vision',
+                                            'posts_per_page' => 1
+                                          )); while (have_posts()) : the_post(); ?>
+                  <h4 class="footertext"><?php the_title();?></h4>
+                  <p class="footertext"><?php the_content();?><br>
+                   <?php endwhile; ?>
+                
+                      <?php wp_reset_query(); ?>
+
+                      <?php endwhile; 
+
+                      else: 
+                          echo '<p>No content found</p>';
+                      endif; ?>
                 </center>
               </div>
               <div class="col-md-4">
                 <center>
-                  <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
-                  <br>
-                  <h4 class="footertext">Designer</h4>
-                  <p class="footertext">This pretty site and the copy it holds are all thanks to this guy.<br>
+                  <i class="fa fa-heart fa-4x" aria-hidden="true"></i>
+                  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                                        <?php query_posts(array(
+                                            'category_name'  => 'mision',
+                                            'posts_per_page' => 1
+                                          )); while (have_posts()) : the_post(); ?>
+                  <h4 class="footertext"><?php the_title();?></h4>
+                  <p class="footertext"><?php the_content();?><br>
+                   <?php endwhile; ?>
+                
+                      <?php wp_reset_query(); ?>
+
+                      <?php endwhile; 
+
+                      else: 
+                          echo '<p>No content found</p>';
+                      endif; ?>
                 </center>
               </div>
             </div>
