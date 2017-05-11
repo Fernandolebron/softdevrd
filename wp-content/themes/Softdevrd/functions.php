@@ -14,6 +14,7 @@
 		add_theme_support('post-thumbnails');
 	add_image_size('small-thumbnail',  417, 160, true); 
 	add_image_size('banner-image', 1200, 600, true);
+	add_image_size('new-image', 400, 400, true);
 	}
 
 	add_action('after_setup_theme', 'wpb_theme_setup');
