@@ -119,7 +119,7 @@
                                           )); while (have_posts()) : the_post(); ?>
          <div class="col-md-4 ">
                         
-                        <div class="usertwo round">
+                        <div class="user round">
                        
                          <a class="img-circle"><img    alt="" ><?php the_post_thumbnail('new-image'); ?></a>
                        

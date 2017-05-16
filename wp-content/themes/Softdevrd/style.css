@@ -19,7 +19,7 @@ h1 h2 h3 h4 h5 h6{
 }
 .nav .navbar-nav{
 
-	margin-top: 30px;
+	margin-top: 60px;
 	font-family: "Open Sans";
 	font-size: 20px;
 
@@ -46,7 +46,7 @@ h1 h2 h3 h4 h5 h6{
 .navbar-inverse .navbar-toggle{
 	background-color: #0b6a9b;
 	border: none;
-	margin-top: 40px;
+	margin-top: 70px;
 }
 
 .navbar-inverse .navbar-collapse{
@@ -560,12 +560,12 @@ background: #428bca;
 
 /******************** Nuestro Equipo *************************/
 
-.user img {
-  border-radius: 50%;
+.user a img {
+  border-radius:50%;
   width:200px;
   height: auto;
-   margin: auto;
-  padding: 10px;
+  margin-right: -110px;
+ 
 }
 .user{
   text-align: center;
@@ -588,21 +588,4 @@ background: #428bca;
   color: #8c040d;
 }
 
-.usertwo a img{
-  width:200px;
-  height: auto;
-}
-
-.usertree  img{
- border-radius: 50%;
-  width:200px;
-  height: auto;
-  margin: auto;
-  padding: 10px;
-
-}
-
-.usertree {
-  text-align: center;
-}
 
