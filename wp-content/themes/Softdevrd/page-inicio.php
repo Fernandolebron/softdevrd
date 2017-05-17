@@ -49,7 +49,7 @@
        
     <!--Portfolio -->
     <section id="services" class="services-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 user">
                     <h1>Portafolio</h1>
@@ -186,61 +186,75 @@
 
         <!-- What Clients said About us section -->
 <section id="client" class="client-section">
+  <h1>Que Opinan Nuestros Clientes?</h1>
         <div class="container">
         <div class="row">
             <div class="col-lg-12 user">
-                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                
                 <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
                   <!-- Carousel indicators -->
                   <ol class="carousel-indicators">
-                    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-                    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+                    <li data-target="#fade-quote-carousel" data-slide-to="2" ></li>
                     <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
                     <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
                     <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
                   </ol>
                   <!-- Carousel items -->
                   <div class="carousel-inner">
+                    
+                    <div class="col-md-12 item active">
+                    
+                       <div class="col-md-4" >
+
+                        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                                            <?php query_posts(array(
+                                                'category_name'  => 'clientesop1',
+                                                'posts_per_page' => 1
+                                              )); while (have_posts()) : the_post(); ?>
+                       <a> <img class="img-circle" alt=""><?php the_post_thumbnail('new-image'); ?></a>
+
+                        </div>
+
+                        <div class="col-md-8">
+                          <h3><?php the_title();?></h3>
+                          <p><?php the_content();?></p>
+                            
+                        </div>
+                        <?php endwhile; ?>
+                    
+                          <?php wp_reset_query(); ?>
+
+                          <?php endwhile; 
+
+                          else: 
+                              echo '<p>No content found</p>';
+                          endif; ?>
+
+                    </div>
+                    
                     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
                                             <?php query_posts(array(
                                                 'category_name'  => 'clientesop1',
                                                 'posts_per_page' => 1
                                               )); while (have_posts()) : the_post(); ?>
-                    <div class=" active item">
-                        <div class="profile-circle " >
-                        <img  class="img-circle" alt="" ><?php the_post_thumbnail('new-image'); ?>
-                        
-                        <h3><?php the_title();?></h3>
-                        
-                        
-                            <p><?php the_content();?></p>
-                            
-                         </div>
-                    </div>
-                    <?php endwhile; ?>
+                    <div class="col-md-12 item">
                     
-                          <?php wp_reset_query(); ?>
+                       <div class="col-md-4" >
 
-                          <?php endwhile; 
+                        
+                       <a> <img class="img-circle" alt=""><?php the_post_thumbnail('new-image'); ?></a>
 
-                          else: 
-                              echo '<p>No content found</p>';
-                          endif; ?>
-
-                        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-                                            <?php query_posts(array(
-                                                'category_name'  => 'clientesop2',
-                                                'posts_per_page' => 5
-                                              )); while (have_posts()) : the_post(); ?>
-                    <div class="item">
-                        <div class="profile-circle " >
-                         <img  class="img-circle" alt="" ><?php the_post_thumbnail('new-image'); ?>
-                         <h3><?php the_title();?></h3>
-                    
-                            <p><?php the_content();?></p>
-                       
                         </div>
+
+                        <div class="col-md-8">
+                          <h3><?php the_title();?></h3>
+                          <p><?php the_content();?></p>
+                            
+                        </div>
+                        
+
                     </div>
                     <?php endwhile; ?>
                     
@@ -251,13 +265,17 @@
                           else: 
                               echo '<p>No content found</p>';
                           endif; ?>
-                    
+                   
                   </div>
+
+                  </div> 
+
                 </div>
+               
+
             </div>                          
         </div>
-    </div>
-   </div>
+    
     </section>
 <!-- What Clients said About us section -->
 

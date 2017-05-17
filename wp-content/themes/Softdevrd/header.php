@@ -37,32 +37,24 @@
     <?php wp_head(); ?>
 
   </head>
-   <body  >
-
-  
-    
-    <!--<h1 class="text-center">Example 3 - Increase entire navbar height</h1>-->
-        <div class="container-fluid "><!-- please put conainer or delimater OJO not terminated --> 
-
- <!-- begin navigation !-->
-    <nav class="navbar navbar-inverse navbar" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-         
-        <div class="navbar-header page-scroll">
+  <header>
+      
+   
+   <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class=" page-scroll" href=""> <img class="" src="<?php echo get_template_directory_uri(); ?>/logo/LOGO-EN-PNG-NORMA.png"  width= "270px"></a>
-           
+          <a class="navbar-brand" href="#"><img class="" src="<?php echo get_template_directory_uri(); ?>/logo/LOGO-EN-PNG-NORMA.png"  width= "200px"></a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse  ">
-          
-              <div class="nav navbar-nav navbar-right">
-                   <!-- Adding Wordpress code for real pages --> 
-                   <?php
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              <?php
                    wp_nav_menu( array(
                        'menu'              => 'primary',
                        'theme_location'    => 'primary',
@@ -71,49 +63,68 @@
                        
                    );
                ?>
-                
-          </div>
-            
-              
-        </div><!-- /.nav-collapse -->
-      
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </nav>
-</div><!-- /.container -->
-         <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-         
-            <div class="row">
-                <div class=" headerh col-lg-12">
+  </header>
 
-                   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-                                    <?php query_posts(array(
-                                        'category_name'  => 'header',
-                                        'posts_per_page' => 1
-                                      )); while (have_posts()) : the_post(); ?>
-          <h1 class=""><?php the_title()?></h1>
-                    <p  class=""><?php the_content()?></p>
-                   <br>                              
-                               
-                
-                <?php endwhile; ?>
-            
-                  <?php wp_reset_query(); ?>
-
-                  <?php endwhile; 
-
-                  else: 
-                      echo '<p>No content found</p>';
-                  endif; ?>
-
-                    
-                    
-                </div>
-                 
-
-                  
+   <body  >
+     <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel1 slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner1" role="listbox">
+        <div class="item1 active">
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption1">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
-
-           
+          </div>
         </div>
-    </section>
+        <div class="item1">
+          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption1">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item1">
+          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption1">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control1" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control1" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+   
