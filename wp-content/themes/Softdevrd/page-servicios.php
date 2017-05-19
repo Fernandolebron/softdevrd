@@ -2,7 +2,7 @@
 
 
   <!-- START THE FEATURETTES -->
-<div class="container">
+<div class="container header_set">
       <hr class="featurette-divider">
 
       <div class="row featurette">
