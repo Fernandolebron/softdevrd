@@ -54,6 +54,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav pull-right ">
+             <li>
               <?php
                    wp_nav_menu( array(
                        'menu'              => 'primary',
@@ -63,9 +64,12 @@
                        
                    );
                ?>
+               <li>
+                <li>
+                        <a class="page-scroll" href="#contact">Contáctanos</a>
+                    </li>
               </ul>
-            </li>
-          </ul>
+            
           
         </div><!--/.nav-collapse -->
       </div>
@@ -124,3 +128,4 @@
         <span class="sr-only">Next</span>
       </a>
     </div><!-- /.carousel -->
+
